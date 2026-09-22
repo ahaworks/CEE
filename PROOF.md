@@ -36,9 +36,7 @@ The earliest direct CEE-core evidence identified in Card history is:
 | Retained first-pass Benchmark lineage | 5cb8eb7c5d0b1c559feb9185dc9eb9c64f4b1426 | 2026-09-22T14:46:02+08:00 | test: add CEE benchmark harness and results |
 | Benchmark v2 harness commit | 0f8b1bcf66007feeabf8182d1c01aebe2492ed36 | 2026-09-22T15:56:20+08:00 | test: correct CEE benchmark second pass harness |
 
-The earliest direct claim is based on reverse history searches for concrete
-production symbols in BOXPlusCard/Data/KnowledgeProvider.swift. At
-09cc8301..., the same production file contains both KnowledgeResolver and
+The earliest direct claim is based on reverse history searches for concrete production symbols. In the current Card checkout, these symbols are defined in `CardApp/Data/KnowledgeProvider.swift`. The historical commit anchor is commit 09cc8301..., whose commit tree contains both `KnowledgeResolver` and
 EvidenceEngine. The later c4945221... commit contains
 KnowledgeQuestionFactTarget, KnowledgeQuestionFactTargetBuilder, and
 EvidenceArbitrationStatus.
