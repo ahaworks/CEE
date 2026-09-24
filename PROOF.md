@@ -12,6 +12,7 @@ The public files are limited to:
 - this proof and README;
 - the SHA-256 manifest of the private snapshot;
 - the final SHA-256 of that manifest;
+- the OpenTimestamps proof for the manifest (`MANIFEST.sha256.ots`);
 - commit/date anchors and a non-reconstructive Benchmark v2 summary.
 
 ## Snapshot integrity
@@ -72,5 +73,8 @@ claim, and the Phase B slice is not a full network/UI user journey.
 - Card production source was not modified for Benchmark v2.
 - No special benchmark cache, favorable sample selection, or CEE algorithm
   change was used.
-- OpenTimestamps: not created. The local ots executable was not available,
-  and no installation or system-environment change was performed.
+- OpenTimestamps proof: `MANIFEST.sha256.ots` is publicly available. It was
+  verified with the official OpenTimestamps web verifier (PASS) against Bitcoin
+  block 968259, attesting that the manifest with SHA-256
+  `8d0accc8d3d1deacb87edb90eebf67e6cd1ab28fb0b41d4c20d8be883bca70b6`
+  existed no later than 2026-09-23 CST.
